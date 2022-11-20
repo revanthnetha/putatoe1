@@ -1,12 +1,17 @@
 {
+  "homepage": "https://revanthnetha.github.io/putatoe1",
   "name": "putatoe",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "vite build",
+    
     "preview": "vite preview"
+
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.12",
@@ -30,6 +35,7 @@
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
+    "gh-pages": "^4.0.0",
     "vite": "^3.2.3"
   }
 }
